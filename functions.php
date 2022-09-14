@@ -22,12 +22,3 @@ endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
-
-function streetfood_add_welcome_notice() {
-    ?>
-        <div class="welcome">
-            Welcome
-        </div>
-    <?php
-}
-add_action("buddyx_header_before", "streetfood_add_welcome_notice");

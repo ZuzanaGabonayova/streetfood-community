@@ -10,13 +10,37 @@ Version: 4.4.1.1663026273
 Updated: 2022-09-12 23:44:33
 
 */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Patrick Hand', cursive;
 }
 
 body{
-    background-color: aqua;
+    background-color: #F2F0EA;
 }
-.container{
-    
+
+.site-header-wrapper{
+    background-image: url('./images/cropped-blurredbackground.jpg');
+    color: #fff!important;
+    height: 120px;
+    background-position: center center;
+    background-size: cover;
+    align-items: center!important;
+    display: flex;
+}
+
+.site-title a{
+    color: #fff!important;
+}
+
+.entry-title{
+    font-size: 36px;
+}
+
+.entry-meta__content{
+    font-size: 18px!important;
+}
+
+p{
+    font-size: 16px;
 }
