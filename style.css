@@ -11,6 +11,8 @@ Updated: 2022-09-12 23:44:33
 
 */
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 *{
     font-family: 'Patrick Hand', cursive;
 }
@@ -19,15 +21,35 @@ body{
     background-color: #F2F0EA;
 }
 
+p {
+    font-size: 20px!important;
+}
+
 .site-header-wrapper{
-    background-image: url('./images/cropped-blurredbackground.jpg');
     color: #fff!important;
     height: 120px;
+    /* background-image: url('./images/cropped-blurredbackground.jpg');
     background-position: center center;
-    background-size: cover;
+    background-size: cover; */
     align-items: center!important;
     display: flex;
+    background-color: #28364A;
 }
+
+
+
+.site-info {
+    background-color: #28364A!important;
+    /* background-image: url('./images/cropped-blurredbackground.jpg')!important;
+    background-position: center center;
+    background-size: cover; */
+    display: none;
+}
+
+footer{
+    background-color: #28364A;
+}
+
 
 .site-title a{
     color: #fff!important;
@@ -43,4 +65,26 @@ body{
 
 p{
     font-size: 16px;
+}
+
+.entry-footer {
+    display: none;
+}
+
+.wp-block-search__button {
+    background-color: #F05130!important;
+}
+
+.site-logo-wrapper{
+    background-image: url('./images/Logo.png');
+    width: 100px;
+    min-height: 100px;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.site-branding-inner{
+    margin-left: 2rem;
 }

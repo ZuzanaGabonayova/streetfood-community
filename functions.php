@@ -22,3 +22,47 @@ endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
+
+function entry_title_family() {
+    ?>
+    <style>
+    h1 {
+        font-family: 'Oswald', sans-serif;
+        font-weight: normal;
+    }
+
+    h3 {
+        font-family: 'Oswald', sans-serif;
+        font-weight: normal;
+    }
+
+    a {
+        font-family: 'Oswald', sans-serif;
+        font-weight: normal;
+    }
+    </style>
+    <?php
+}
+add_action("get_template_part_template-parts/content/entry_title", "entry_title_family");
+
+
+
+function copyright_disclaimer() {
+    ?>
+    <h2 class="copy">©<?php echo date('Y'); ?> Esbjerg Street Food</h2>
+    <style>
+        .copy{
+            background-color: #28364A;
+            font-family: 'Oswald', sans-serif;
+            font-weight: normal;
+            margin: 0rem;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100px;
+        }
+    </style>
+    <?php
+}
+add_action("buddyx_copyright_before", "copyright_disclaimer");
